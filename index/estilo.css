@@ -1,0 +1,54 @@
+.geral{
+    background-image: linear-gradient(to bottom right, rgb(29, 27, 27), rgb(57, 82, 105), #003c96);
+}
+/* principal || */
+.header01{font-family: Georgia, 'Times New Roman', Times, serif;
+    color: floralwhite;
+    text-align: center;
+    margin-top: 4%;
+    font-size: 30px;
+    font-style: italic;
+    word-spacing: 10px;
+}
+#login{
+    text-align: center;
+    margin-top: 7%;
+    font-size: larger, 25px;
+}
+#botao{
+    width: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    font-weight: bolder;
+    cursor: pointer;
+} 
+/* principal _*/
+/* pg login ||*/
+.cabecario{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: floralwhite;
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 20px;
+    font-style: italic;
+}
+#botaof5{
+    border-radius: 10%;
+    background-color: transparent;
+    color: floralwhite;
+    cursor: pointer;
+    border: none;
+}
+.dadoslogin{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    color: floralwhite;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 25px;
+}
+#botaologin{
+    width: 10%;
+    cursor: pointer;
+}
+/* pg login _*/
