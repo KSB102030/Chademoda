@@ -1,54 +1,27 @@
-.geral{
-    background-image: linear-gradient(to bottom right, rgb(29, 27, 27), rgb(57, 82, 105), #003c96);
-}
-/* principal || */
-.header01{font-family: Georgia, 'Times New Roman', Times, serif;
-    color: floralwhite;
-    text-align: center;
-    margin-top: 4%;
-    font-size: 30px;
-    font-style: italic;
-    word-spacing: 10px;
-}
-#login{
-    text-align: center;
-    margin-top: 7%;
-    font-size: larger, 25px;
-}
-#botao{
-    width: 10%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 100%;
-    font-weight: bolder;
-    cursor: pointer;
-} 
-/* principal _*/
-/* pg login ||*/
-.cabecario{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: floralwhite;
+#logo{
     text-align: left;
-    margin-top: 2%;
-    margin-left: 2%;
-    font-size: 20px;
     font-style: italic;
+    font-size: 100%;
+    color: antiquewhite;
+    font-family: cursive;
 }
-#botaof5{
-    border-radius: 10%;
-    background-color: transparent;
-    color: floralwhite;
-    cursor: pointer;
-    border: none;
+#fundo{
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgb(151, 151, 151), rgb(104, 104, 104),rgb(41, 41, 41));
 }
-.dadoslogin{
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    color: floralwhite;
-    text-align: center;
-    margin-top: 10%;
-    font-size: 25px;
+#fontpe{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    font-style: italic;
+    text-align: justify;
+    font-size: small;
 }
-#botaologin{
-    width: 10%;
-    cursor: pointer;
+#sobre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(41, 41, 41);
+    font-style: italic;
+    text-align: justify;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-weight: bold;
 }
-/* pg login _*/
+
