@@ -6,7 +6,7 @@
     font-family: cursive;
 }
 #fundo{
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgb(167, 167, 167), rgb(134, 134, 134),rgb(104, 104, 104));
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgb(192, 192, 192), rgb(163, 163, 163),rgb(136, 136, 136));
 }
 #fontpe{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,8 +22,8 @@
     color: rgb(41, 41, 41);
     font-style: italic;
     text-align: justify;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
     font-weight: bold;
 }
 
