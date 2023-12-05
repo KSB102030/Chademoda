@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chá de moda</title>
+  <link rel="stylesheet" href="estilo.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body class="fundo">
+<!-- Cabeçario -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a onclick="document.location='Geral.html'" class="nav-link" id="logo">
+        <h1>Chá de moda</h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" id="btncab">Sair</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+  <div class="Cadastro">
+    <p class="txt"><b>Nome completo:</b></p>
+    <input type="text" placeholder="Digite Nome completo" id="Nome" class="caixinha">
+    <p class="txt"><b>Data de nascimento:</b></p>
+    <input type="date" placeholder="Digite a Data de nascimento" class="caixinha">
+    <p class="txt"><b>CPF:</b></p>
+    <input type="number" placeholder="Digite o CPF" class="caixinha">
+    <p class="txt"><b>Numero de Celular:</b></p>
+    <input type="tel" placeholder="Digite o Numero de Celular" class="caixinha">
+    <p class="txt"><b>Endereço:</b></p>
+    <input type="text" placeholder="Digite o Endereço" class="caixinha">
+    <p class="txt"><b>Email:</b></p>
+    <input type="text" placeholder="Digite o Email" class="caixinha">
+
+    <button type="submit" class="btn btn-outline-dark" id="btn" onclick="alert('Cliente ' + document.getElementById('Nome').value +' cadastrado com sucesso!'); document.location.href = 'Geral.html'">Login</button>
+
+    
+</div>
+<footer class="py-4 bg-dark text-white" id="rpegeral">
+    <div class="container">
+      <div class="text-center py-2">
+        <p> &copy; 2023 - Chá de moda</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

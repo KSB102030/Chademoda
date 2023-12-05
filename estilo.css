@@ -4,35 +4,63 @@
     font-size: 100%;
     color: whitesmoke;
     font-family: cursive;
+    cursor: pointer;
 }
-#fundo{
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgb(192, 192, 192), rgb(163, 163, 163),rgb(136, 136, 136));
-}
-#fontpe{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#btncab{
+    text-align: left;
+    font-size: 100%;
     color: whitesmoke;
-    font-style: italic;
-    text-align: justify;
-    font-size: small;
-    bottom: 0;
-    width: 100%;
-}
-#sobre{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(41, 41, 41);
-    font-style: italic;
-    text-align: justify;
-    margin: 5% 30% 5% 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-left: 2%;
     font-weight: bold;
 }
+.fundo{
+    background: linear-gradient(to bottom right, rgb(255, 255, 255),rgb(192, 192, 192), rgb(163, 163, 163),rgb(136, 136, 136)); 
+    height: 100vh; 
+    margin: 0; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+.login{
+        width: 20%;
+        padding: 1%;
+        background-color: #f1f1f1;
+        margin: 0 auto;
+        margin-top: 5%;
+        border-radius: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+}
+#btn {
 
+    padding: 15px 15px;
+    border: 2px solid rgb(65, 65, 65);
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    margin-top: 8%;
+}
+#btn:hover {
+    opacity:1;
+}
+.caixinha{
+    padding: 15px 15px;
+    border: 2px solid rgb(65, 65, 65);
+    width: 100%;
+    opacity: 0.9;
+}
+.txt{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5% 0% 2% 0%;
+}
 .produtos{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-bottom: 5%;
 }
 .tamanho_prod{
@@ -42,4 +70,75 @@
     padding: 10px;
     text-align: center;
     flex: 0 0 calc(25% - 5%);
+}
+#fontpe{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    font-style: italic;
+    text-align: justify;
+    font-size: small;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+        #rpegeral{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: whitesmoke;
+            font-style: italic;
+            text-align: justify;
+            font-size: small;
+            bottom: 0;
+            width: 100%;
+        }
+.imgtamanho{
+    width: 50%;
+}
+.logologin{
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(41, 41, 41);
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 7%;
+}
+.btncad{
+    text-align: right;
+    margin: 5% 23% 0% 0%;
+}
+.Cadastro{
+    width: 30%;
+    padding: 1%;
+    background-color: transparent;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.infcliente{
+    width: 40%;
+    padding: 1%;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.anotacoes{
+    padding: 50px 50px ;
+    border: 2px solid rgb(65, 65, 65);
+    width: 100%;
+    opacity: 0.9;
+}
+.pagar{
+    text-align: left;
+    padding: 10px 10px ;
+    margin: 5% 30% 5% 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    font-weight: bold;
+    vertical-align: middle;
 }
