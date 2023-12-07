@@ -71,25 +71,15 @@
     text-align: center;
     flex: 0 0 calc(25% - 5%);
 }
-#fontpe{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: whitesmoke;
-    font-style: italic;
-    text-align: justify;
-    font-size: small;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-        #rpegeral{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: whitesmoke;
-            font-style: italic;
-            text-align: justify;
-            font-size: small;
-            bottom: 0;
-            width: 100%;
-        }
+   #rpegeral{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: whitesmoke;      
+      font-style: italic;      
+      text-align: justify;      
+      font-size: small;      
+       bottom: 0;     
+      width: 100%;      
+        }       
 .imgtamanho{
     width: 50%;
 }
@@ -141,4 +131,8 @@
     background-color: whitesmoke;
     font-weight: bold;
     vertical-align: middle;
+}
+.vazio{
+    margin-top: 10%;
+    color: transparent;
 }
