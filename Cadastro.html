@@ -29,23 +29,78 @@
   </header>
 
   <div class="Cadastro">
-    <p class="txt"><b>Nome completo:</b></p>
-    <input type="text" placeholder="Digite Nome completo" id="Nome" class="caixinha">
-    <p class="txt"><b>Data de nascimento:</b></p>
-    <input type="date" placeholder="Digite a Data de nascimento" class="caixinha">
-    <p class="txt"><b>CPF:</b></p>
-    <input type="number" placeholder="Digite o CPF" class="caixinha">
-    <p class="txt"><b>Numero de Celular:</b></p>
-    <input type="tel" placeholder="Digite o Numero de Celular" class="caixinha">
-    <p class="txt"><b>Endereço:</b></p>
-    <input type="text" placeholder="Digite o Endereço" class="caixinha">
-    <p class="txt"><b>Email:</b></p>
-    <input type="text" placeholder="Digite o Email" class="caixinha">
-
-    <button type="submit" class="btn btn-outline-dark" id="btn" onclick="alert('Cliente ' + document.getElementById('Nome').value +' cadastrado com sucesso!'); document.location.href = 'Geral.html'">Login</button>
-
-    
+      <p class="txt"><b>Nome completo:</b></p>
+      <input type="text" placeholder="Digite Nome completo" id="Nome" class="caixinha">
+      <p class="txt"><b>Data de nascimento:</b></p>
+      <input type="text" placeholder="Digite a Data de nascimento" id="DataNascimento" class="caixinha">
+      <p class="txt"><b>CPF:</b></p>
+      <input type="number" placeholder="Digite o CPF" id="CPF" class="caixinha">
+      <p class="txt"><b>Numero de Celular:</b></p>
+      <input type="tel" placeholder="Digite o Numero de Celular" id="NumeroCelular" class="caixinha">
+      <p class="txt"><b>Endereço:</b></p>
+      <input type="text" placeholder="Digite o Endereço" id="Endereco" class="caixinha">
+      <p class="txt"><b>Email:</b></p>
+      <input type="text" placeholder="Digite o Email" id="Email" class="caixinha">
+  
+      <button type="submit" class="btn btn-outline-dark" id="btn" onclick="validar()">Cadastrar</button>
 </div>
+
+<script>
+  function validar() {
+    // Valida o nome
+    const nome = document.getElementById("Nome").value;
+  const expressaoRegularNome = /^[a-zA-Z ]+$/;
+  if (!expressaoRegularNome.test(nome)) {
+    alert("O nome deve ser composto apenas por letras.");
+    return;
+  }
+
+  // Valida a data de nascimento
+  const dataNascimento = document.getElementById("DataNascimento").value;
+  const expressaoRegularDataNascimento = /^\d{2}-\d{2}-\d{4}$/;
+  if (!expressaoRegularDataNascimento.test(dataNascimento)) {
+    alert("A data de nascimento deve estar no formato DD-MM-AAAA.");
+    return;
+  }
+
+  // Valida o CPF
+  const cpf = document.getElementById("CPF").value;
+  const expressaoRegularCpf = /^\d{11}$/;
+  if (!expressaoRegularCpf.test(cpf)) {
+    alert("O CPF deve ter 11 dígitos.");
+    return;
+  }
+
+  // Valida o número de celular
+  const numeroCelular = document.getElementById("NumeroCelular").value;
+  const expressaoRegularNumeroCelular = /^\d{2}-\d{5}-\d{4}$/;
+  if (!expressaoRegularNumeroCelular.test(numeroCelular)) {
+    alert("O número de celular deve estar no formato DDD-NNNN-NNNN.");
+    return;
+  }
+
+  // Valida o endereço
+  const endereco = document.getElementById("Endereco").value;
+  const expressaoRegularEndereco = /^[a-zA-Z0-9 ,.-]+$/;
+  if (!expressaoRegularEndereco.test(endereco)) {
+    alert("O endereço deve ser composto apenas por letras, números, vírgulas, pontos e hifens.");
+    return;
+  }
+
+  // Valida o e-mail
+  const email = document.getElementById("Email").value;
+  const expressaoRegularEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/;
+  if (!expressaoRegularEmail.test(email)) {
+    alert("O e-mail deve estar no formato nome@dominio.com.br.");
+    return;
+  }
+
+  // Se todas as validações forem bem-sucedidas, o formulário é enviado
+  alert("Cadastro concluido");
+  }  
+
+</script>
+
 <footer class="py-4 bg-dark text-white" id="rpegeral">
     <div class="container">
       <div class="text-center py-2">
